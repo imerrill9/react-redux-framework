@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Modern React Framework
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a modern React application that leverages latest technologies and best practices for state management, API interactions, UI design, and routing. It's built to be a small example of technologies I prefer to use for a react UI website and can be expanded upon as needed.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **React**: A JavaScript library for building user interfaces.
+- **Redux Toolkit**: The official, opinionated toolset for efficient Redux development.
+- **RTK Query**: A powerful data fetching and caching tool built into Redux Toolkit.
+- **Material UI**: A comprehensive suite of UI tools and components for React.
+- **React Router DOM**: Declarative routing for React applications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Efficient State Management**: Utilizes Redux Toolkit for centralized state management, reducing boilerplate and simplifying complex state logic.
+- **Optimized API Interactions**: Implements RTK Query for efficient data fetching, caching, and state updates.
+- **Responsive UI Design**: Leverages Material UI components and theming for a consistent, modern, and responsive user interface.
+- **Declarative Routing**: Uses React Router DOM for seamless navigation and URL-based rendering.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+src/
+├── api/
+├── components/
+├── redux/
+├── App.js
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `api/`: Registers all API calls using RTK Query
+- `components/`: Screens and reusable components
+- `redux/`: configures redux store and defines reducers
+- `App.js`: Main app component where routes are registered
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The main page at localhost:3000 shows and example of making a call to a free API using RTK Query, displaying the data in a Material UI Card. The login link on the toolbar navigates to a login screen which is an example of saving a username into the redux store. The user is then persisted and shown on any page as an example.
